@@ -5,31 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EDGAR</title>
+    
+    <title>EduKuk</title>
+    
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/estilos.css">
-
+  
+    <!-- Color del navegador -->
     <meta name="theme-color" content="#2091F9">
-
-    <meta name="title" content="Aprende CSS desde cero">
-    <meta name="description"
-        content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google.">
-
-
+  
+    <!-- SEO básico -->
+    <meta name="title" content="Monetiza tu contenido desde cero - EduKuk">
+    <meta name="description" content="Aprende a crear una página web, vender libros, plantillas, editar videos, promocionar en Facebook, y recibir pagos por Gumroad, Hotmart y PayPal. Todo con HTML, CSS, JavaScript o ReactJS.">
+  
+    <!-- Meta Open Graph (para Facebook y redes sociales) -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://alexcgdesign.github.io">
-    <meta property="og:title" content="Aprende CSS desde cero">
-    <meta property="og:description"
-        content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google.">
-    <meta property="og:image" content="https://alexcgdesign.github.io/images/css.jpg">
-
+    <meta property="og:url" content="https://tupagina.com/"> <!-- cambia por tu dominio real -->
+    <meta property="og:title" content="Monetiza tu contenido desde cero - Edgar Kuk">
+    <meta property="og:description" content="Te enseño cómo logré monetizar mi contenido digital sin experiencia previa en programación. Ahora tú también puedes hacerlo.">
+    <meta property="og:image" content="https://tupagina.com/images/portada.jpg"> <!-- cambia por tu imagen real -->
+  
+    <!-- Meta Twitter Card -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.jordanalex.com/">
-    <meta property="twitter:title" content="Aprende CSS desde cero">
-    <meta property="twitter:description"
-        content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google.">
-    <meta property="twitter:image" content="https://alexcgdesign.github.io/images/css.jpg">
+    <meta property="twitter:url" content="https://tupagina.com/">
+    <meta property="twitter:title" content="Monetiza tu contenido desde cero - Edgar Kuk">
+    <meta property="twitter:description" content="Aprende a vender productos digitales y cobrar desde cualquier país con tu propia página web.">
+    <meta property="twitter:image" content="https://tupagina.com/images/portada.jpg"> <!-- cambia por tu imagen real -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+ 
+
+
 </head>
 
 <body>
@@ -37,87 +44,215 @@
     <header class="hero">
         <nav class="nav container">
             <div class="nav__logo">
-                <img src="./images/logo-white.png" alt="">
+                <img src="./images/logo-dark.png" alt="Logo EduKuk">
             </div>
-
+    
             <ul class="nav__link nav__link--menu">
                 <li class="nav__items">
                     <a href="#" class="nav__links">Inicio</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">Acerca de</a>
+                    <a href="#sobre" class="nav__links">Sobre el Proyecto</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">Contacto</a>
+                    <a href="#cursos" class="nav__links">Cursos</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">Blog</a>
+                    <a href="#contacto" class="nav__links">Contacto</a>
                 </li>
-
-                <img src="./images/close.svg" class="nav__close">
+    
+                <img src="./images/close.svg" class="nav__close" alt="Cerrar menú">
             </ul>
-
+    
             <div class="nav__menu">
-                <img src="./images/menu.svg" class="nav__img">
+                <img src="./images/menu.svg" class="nav__img" alt="Abrir menú">
             </div>
         </nav>
-
+    
         <section class="hero__container container">
-            <h1 class="hero__title">¡Domina la lógica de programación con nuestro curso de JavaScript!</h1>
-            <p class="hero__paragraph">Elige dominar JavaScript de una vez por todas. Al completar este curso, podrás desarrollar habilidades sólidas en programación con JavaScript y crear aplicaciones interactivas y dinámicas.</p>
-            <a href="#knowledge" class="cta">Comienza ahora</a>
+            <h1 class="hero__title">Crea y monetiza tu <span>contenido digital desde cero</span></h1>
+            <p class="hero__paragraph">
+                Aprende a crear tu propia página web, vender ebooks y plantillas, promocionar en redes sociales y recibir pagos con PayPal, Gumroad o Hotmart. No necesitas experiencia previa, solo ganas de empezar.
+            </p>
+            <a href="#cursos" class="cta">Quiero Empezar</a>
         </section>
     </header>
 
     <main>
-        <section class="container about">
+        <section class="container about" id="sobre">
             <h2 class="subtitle">¿Qué aprenderás en este curso?</h2>
-            <p class="about__paragraph">Dominarás los conceptos esenciales de JavaScript, incluyendo variables, condicionales, bucles, funciones y objetos.</p>
-
+            <p class="about__paragraph">
+              Aprende a crear contenido digital desde cero. Te guiaremos paso a paso para que puedas grabar tus cursos, crear tu propia página, vender y monetizar tu conocimiento.
+            </p>
+          
             <div class="about__main">
-                <article class="about__icons">
-                    <img src="./images/shapes.svg" class="about__icon">
-                    <h3 class="about__title">Manipulación del DOM</h3>
-                    <p class="about__paragrah">Aprenderás a manipular el DOM (Document Object Model) para crear páginas web dinámicas e interactivas.</p>
-                </article>
-
-                <article class="about__icons">
-                    <img src="./images/paint.svg" class="about__icon">
-                    <h3 class="about__title">JavaScript Avanzado</h3>
-                    <p class="about__paragrah">Te familiarizarás con conceptos avanzados como funciones de orden superior, clases, herencia y prototipos.</p>
-                </article>
-
-                <article class="about__icons">
-                    <img src="./images/code.svg" class="about__icon">
-                    <h3 class="about__title">Aplicaciones Web</h3>
-                    <p class="about__paragrah">Adquirirás habilidades prácticas para desarrollar aplicaciones web completas utilizando JavaScript puro y bibliotecas/frameworks populares como React, Angular o Vue.js.</p>
-                </article>
+              <article class="about__icons">
+                <img src="images/planeacion.jpg" alt="Paso 1" class="about__image">
+                <h3 class="about__title">1. Escoger un tema</h3>
+                <p class="about__paragrah">
+                  Elige un tema que domines o te apasione. Esto será la base de tu contenido.
+                </p>
+              </article>
+          
+              <article class="about__icons">
+                <img src="images/grabacion.jpg" alt="Paso 2" class="about__image">
+                <h3 class="about__title">2. Graba y edita con Clipchamp</h3>
+                <p class="about__paragrah">
+                  Aprende a grabar tus videos y editarlos con Clipchamp, una herramienta fácil y gratuita.
+                </p>
+              </article>
+          
+              <article class="about__icons">
+                <img src="images/paginaweb.jpg" alt="Paso 3" class="about__image">
+                <h3 class="about__title">3. Crea una página web</h3>
+                <p class="about__paragrah">
+                  Usa HTML, CSS y JavaScript para construir una web donde mostrarás tus cursos.
+                </p>
+              </article>
+          
+              <article class="about__icons">
+                <img src="images/gumroad.jpg" alt="Paso 4" class="about__image">
+                <h3 class="about__title">4. Publica en Gumroad o Hotmart</h3>
+                <p class="about__paragrah">
+                  Aprende a subir tu curso y venderlo usando plataformas como Gumroad o Hotmart.
+                </p>
+              </article>
+          
+              <article class="about__icons">
+                <img src="images/redes.jpg" alt="Paso 5" class="about__image">
+                <h3 class="about__title">5. Promoción en redes</h3>
+                <p class="about__paragrah">
+                  Crea una cuenta en TikTok, Instagram o Facebook para atraer a tu público.
+                </p>
+              </article>
+          
+              <article class="about__icons">
+                <img src="images/paypal.jpg" alt="Paso 6" class="about__image">
+                <h3 class="about__title">6. Crea tu cuenta PayPal</h3>
+                <p class="about__paragrah">
+                  Configura una cuenta PayPal para recibir pagos de tus ventas digitales.
+                </p>
+              </article>
+          
+              <article class="about__icons">
+                <img src="images/monetizar.jpg" alt="Paso 7" class="about__image">
+                <h3 class="about__title">7. Monetiza tu contenido</h3>
+                <p class="about__paragrah">
+                  Sube tus videos a YouTube en modo oculto y véndelos desde tu página web.
+                </p>
+              </article>
             </div>
-        </section>
-
-        <section class="knowledge" id="knowledge">
-            <div class="knowledge__container container">
-                <div class="knowledege__texts">
-                    <h2 class="subtitle">Tus primeros tres clases son gratis!</h2>
-                    <p class="knowledge__paragraph">Sumérgete en el mundo apasionante de la lógica de programación con JavaScript y despierta tu creatividad para resolver problemas de manera eficiente y elegante</p>
-                    <a href="#price" id="cta" class="cta">Accede a más curso</a>
-                </div>
-                <div class="knowledge__videos">
-                    <!-- Video 1 de YouTube -->
-                    <div class="video-container">
-                        <iframe width="315" height="560" src="https://www.youtube.com/embed/G3bvJ2sqwh0" title=", #javascript  #conocimientos #programacionweb #programadoresweb #desarrolloweb" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                    <!-- Video 2 de YouTube -->
-                    <div class="video-container">
-                        <iframe width="315" height="560" src="https://www.youtube.com/embed/7cfXiKV4Zio" title="#conocimientos #desarrolloweb #javascript #coding #programacionweb #developer #programadoresweb" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                    <!-- Video 3 de YouTube -->
-                    <div class="video-container">
-                        <iframe width="315" height="560" src="https://www.youtube.com/embed/CbCqs6fWum4" title="#conocimientos   #javascript #coding #desarrolloweb #developer #programacionweb #programadoresweb" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                </div>
-
+          </section>
+          
+        
+          <section class="future-achievement">
+            <div class="future-achievement__container">
+              <img src="images/logro.jpg" alt="Futuro creador de contenido" class="future-achievement__image">
+              
+              <div class="future-achievement__content">
+                <h2 class="future-achievement__title">¿Qué lograrás al terminar este curso?</h2>
+                <p class="future-achievement__text">
+                  Si completas este curso, serás capaz de crear tu propia marca digital, grabar y editar tus cursos, montar una página web, vender tu contenido en plataformas como Gumroad o Hotmart y cobrar tus ganancias con PayPal. ¡Podrás compartir tu conocimiento con el mundo y comenzar a generar ingresos en línea!
+                </p>
+              </div>
             </div>
+          </section>
+          
+        <section class="questions container">
+            <h2 class="subtitle">Rutas para ser un creador de contenido</h2>
+            <p class="questions__paragraph">Aquí tienes una guía de pasos recomendados para convertirte en un creador de contenido exitoso y vender tu material en línea:</p>
+        
+            <section class="questions__container">
+                <!-- Paso 1: Definir el tema de tu contenido -->
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">Paso 1: Definir el tema de tu contenido
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img">
+                            </span>
+                        </h3>
+                        <p class="questions__show">Selecciona un tema de interés y demanda. Asegúrate de que sea algo que te apasione y tenga audiencia en el mercado.</p>
+                    </div>
+                </article>
+        
+                <!-- Paso 2: Crear un plan de contenido -->
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">Paso 2: Crear un plan de contenido
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img">
+                            </span>
+                        </h3>
+                        <p class="questions__show">Elabora un cronograma o plan de lo que vas a enseñar y cómo organizarás tu contenido. Esto te ayudará a mantener coherencia y enfoque.</p>
+                    </div>
+                </article>
+        
+                <!-- Paso 3: Preparar el equipo necesario -->
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">Paso 3: Preparar el equipo necesario
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img">
+                            </span>
+                        </h3>
+                        <p class="questions__show">Asegúrate de tener las herramientas adecuadas, como una cámara o teléfono de buena calidad, micrófono y software de edición de video.</p>
+                    </div>
+                </article>
+        
+                <!-- Paso 4: Grabar y editar tu contenido -->
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">Paso 4: Grabar y editar tu contenido
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img">
+                            </span>
+                        </h3>
+                        <p class="questions__show">Utiliza herramientas como OBS Studio para grabar tus videos y programas como CapCut o Premiere para editarlos y agregarles valor.</p>
+                    </div>
+                </article>
+        
+                <!-- Paso 5: Seleccionar la plataforma para vender tu contenido -->
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">Paso 5: Seleccionar la plataforma para vender tu contenido
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img">
+                            </span>
+                        </h3>
+                        <p class="questions__show">Plataformas como Gumroad, Hotmart o Udemy son ideales para vender cursos. Escoge la que mejor se adapte a tus necesidades y la de tu audiencia.</p>
+                    </div>
+                </article>
+        
+                <!-- Paso 6: Promocionar tu contenido en redes sociales -->
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">Paso 6: Promocionar tu contenido en redes sociales
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img">
+                            </span>
+                        </h3>
+                        <p class="questions__show">Usa plataformas como Instagram, TikTok, YouTube o Facebook para mostrar avances, consejos y clips cortos que atraigan a tu audiencia.</p>
+                    </div>
+                </article>
+        
+                <!-- Paso 7: Interactuar con tu comunidad -->
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">Paso 7: Interactuar con tu comunidad
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img">
+                            </span>
+                        </h3>
+                        <p class="questions__show">Crea una relación cercana con tu audiencia. Responde preguntas, haz encuestas y fomenta la participación en tus redes y videos.</p>
+                    </div>
+                </article>
+            </section>
+        
+            <section class="questions__offer">
+                <h2 class="subtitle">¿Estás listo para convertirte en un creador de contenido?</h2>
+                <p class="questions__copy">"Comienza tu viaje hacia la creación de contenido exitoso. Con la ruta de aprendizaje correcta, podrás compartir tus conocimientos con el mundo y generar ingresos a través de tus videos y cursos. ¡No esperes más y empieza hoy mismo!"</p>
+                <a href="#price" class="cta">Empieza ahora</a>
+            </section>
         </section>
 
         <section class="price container" id="price">
@@ -226,54 +361,9 @@
             </div>
         </section>
 
-        <section class="questions container">
-            <h2 class="subtitle">Preguntas frecuentes</h2>
-            <p class="questions__paragraph">Aquí tienes respuestas a algunas preguntas frecuentes sobre JavaScript:</p>
 
-            <section class="questions__container">
-                <article class="questions__padding">
-                    <div class="questions__answer">
-                        <h3 class="questions__title">¿Qué es JavaScript?
-                            <span class="questions__arrow">
-                                <img src="./images/arrow.svg" class="questions__img">
-                            </span>
-                        </h3>
-
-                        <p class="questions__show">JavaScript es un lenguaje de programación ampliamente utilizado que se utiliza principalmente para hacer que las páginas web sean interactivas y dinámicas. Es un componente esencial de la mayoría de los sitios web modernos y permite agregar comportamientos complejos y funcionalidades a las páginas web.</p>
-                    </div>
-                </article>
-
-                <article class="questions__padding">
-                    <div class="questions__answer">
-                        <h3 class="questions__title">¿Cuáles son las características principales de JavaScript?
-                            <span class="questions__arrow">
-                                <img src="./images/arrow.svg" class="questions__img">
-                            </span>
-                        </h3>
-
-                        <p class="questions__show">JavaScript es un lenguaje de programación versátil que ofrece numerosas características, incluyendo la capacidad de manipular el DOM (Document Object Model), gestionar eventos, crear animaciones, realizar solicitudes de red asincrónicas (AJAX), trabajar con datos JSON, utilizar expresiones regulares, y mucho más.</p>
-                    </div>
-                </article>
-
-                <article class="questions__padding">
-                    <div class="questions__answer">
-                        <h3 class="questions__title">¿Cuáles son las diferencias entre JavaScript y otros lenguajes de programación?
-                            <span class="questions__arrow">
-                                <img src="./images/arrow.svg" class="questions__img">
-                            </span>
-                        </h3>
-
-                        <p class="questions__show">JavaScript es un lenguaje de programación interpretado que se ejecuta en el navegador del cliente. A diferencia de lenguajes de programación del lado del servidor como PHP o Python, JavaScript se ejecuta en el navegador del usuario y puede interactuar con el HTML y el CSS de una página web para crear experiencias interactivas y dinámicas en tiempo real.</p>
-                    </div>
-                </article>
-            </section>
-
-            <section class="questions__offer">
-                <h2 class="subtitle">¿Estás listo para aprender JavaScript?</h2>
-                <p class="questions__copy">"Prepárate para sumergirte en el fascinante mundo de la programación con JavaScript. Desde la creación de sitios web interactivos hasta el desarrollo de aplicaciones web completas, JavaScript te ofrece un sinfín de posibilidades para convertirte en un desarrollador web versátil y creativo. ¡Empieza hoy mismo y descubre todo lo que puedes lograr con JavaScript!"</p>
-                <a href="#price" class="cta">Aprende ahora</a>
-            </section>
-        </section>
+        
+        
     </main>
 
     <footer class="footer">
@@ -323,6 +413,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/ajax.js"></script>
     <script src="./js/price.js"></script>
+    
 </body>
 
 </html>
