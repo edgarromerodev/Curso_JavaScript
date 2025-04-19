@@ -55,7 +55,7 @@
                     <a href="#sobre" class="nav__links">Sobre el Proyecto</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#cursos" class="nav__links">Cursos</a>
+                    <a href="https://edukukgt.vercel.app/" target="_blank"  class="nav__links">Cursos</a>
                 </li>
                 <li class="nav__items">
                     <a href="#contacto" class="nav__links">Contacto</a>
@@ -79,7 +79,7 @@
     </header>
 
     <main>
-        <section class="container about" id="sobre">
+        <section class="container about" id="about">
             <h2 class="subtitle">¿Qué aprenderás en este curso?</h2>
             <p class="about__paragraph">
               Aprende a crear contenido digital desde cero. Te guiaremos paso a paso para que puedas grabar tus cursos, crear tu propia página, vender y monetizar tu conocimiento.
@@ -87,60 +87,82 @@
           
             <div class="about__main">
               <article class="about__icons">
-                <img src="images/planeacion.jpg" alt="Paso 1" class="about__image">
-                <h3 class="about__title">1. Escoger un tema</h3>
+                <div class="about__image-wrapper">
+                  <img src="images/planeacion.jpg" alt="Paso 1" class="about__image">
+                  <span class="about__badge">1</span>
+                </div>
+                <h3 class="about__title">Escoger un tema</h3>
                 <p class="about__paragrah">
                   Elige un tema que domines o te apasione. Esto será la base de tu contenido.
                 </p>
               </article>
-          
+              
               <article class="about__icons">
-                <img src="images/grabacion.jpg" alt="Paso 2" class="about__image">
-                <h3 class="about__title">2. Graba y edita con Clipchamp</h3>
+                <div class="about__image-wrapper">
+                  <img src="images/grabacion.jpg" alt="Paso 2" class="about__image">
+                  <span class="about__badge">2</span>
+                </div>
+                <h3 class="about__title">Graba y edita con Clipchamp</h3>
                 <p class="about__paragrah">
                   Aprende a grabar tus videos y editarlos con Clipchamp, una herramienta fácil y gratuita.
                 </p>
               </article>
-          
+              
               <article class="about__icons">
-                <img src="images/paginaweb.jpg" alt="Paso 3" class="about__image">
-                <h3 class="about__title">3. Crea una página web</h3>
+                <div class="about__image-wrapper">
+                  <img src="images/paginaweb.jpg" alt="Paso 3" class="about__image">
+                  <span class="about__badge">3</span>
+                </div>
+                <h3 class="about__title">Crea una página web</h3>
                 <p class="about__paragrah">
                   Usa HTML, CSS y JavaScript para construir una web donde mostrarás tus cursos.
                 </p>
               </article>
-          
+              
               <article class="about__icons">
-                <img src="images/gumroad.jpg" alt="Paso 4" class="about__image">
-                <h3 class="about__title">4. Publica en Gumroad o Hotmart</h3>
+                <div class="about__image-wrapper">
+                  <img src="images/gumroad.jpg" alt="Paso 4" class="about__image">
+                  <span class="about__badge">4</span>
+                </div>
+                <h3 class="about__title">Publica en Gumroad o Hotmart</h3>
                 <p class="about__paragrah">
                   Aprende a subir tu curso y venderlo usando plataformas como Gumroad o Hotmart.
                 </p>
               </article>
-          
+              
               <article class="about__icons">
-                <img src="images/redes.jpg" alt="Paso 5" class="about__image">
-                <h3 class="about__title">5. Promoción en redes</h3>
+                <div class="about__image-wrapper">
+                  <img src="images/redes.jpg" alt="Paso 5" class="about__image">
+                  <span class="about__badge">5</span>
+                </div>
+                <h3 class="about__title">Promoción en redes</h3>
                 <p class="about__paragrah">
                   Crea una cuenta en TikTok, Instagram o Facebook para atraer a tu público.
                 </p>
               </article>
-          
+              
               <article class="about__icons">
-                <img src="images/paypal.jpg" alt="Paso 6" class="about__image">
-                <h3 class="about__title">6. Crea tu cuenta PayPal</h3>
+                <div class="about__image-wrapper">
+                  <img src="images/paypal.jpg" alt="Paso 6" class="about__image">
+                  <span class="about__badge">6</span>
+                </div>
+                <h3 class="about__title">Crea tu cuenta PayPal</h3>
                 <p class="about__paragrah">
                   Configura una cuenta PayPal para recibir pagos de tus ventas digitales.
                 </p>
               </article>
-          
+              
               <article class="about__icons">
-                <img src="images/monetizar.jpg" alt="Paso 7" class="about__image">
-                <h3 class="about__title">7. Monetiza tu contenido</h3>
+                <div class="about__image-wrapper">
+                  <img src="images/monetizar.jpg" alt="Paso 7" class="about__image">
+                  <span class="about__badge">7</span>
+                </div>
+                <h3 class="about__title">Monetiza tu contenido</h3>
                 <p class="about__paragrah">
                   Sube tus videos a YouTube en modo oculto y véndelos desde tu página web.
                 </p>
               </article>
+              
             </div>
           </section>
           
@@ -154,6 +176,9 @@
                 <p class="future-achievement__text">
                   Si completas este curso, serás capaz de crear tu propia marca digital, grabar y editar tus cursos, montar una página web, vender tu contenido en plataformas como Gumroad o Hotmart y cobrar tus ganancias con PayPal. ¡Podrás compartir tu conocimiento con el mundo y comenzar a generar ingresos en línea!
                 </p>
+
+                <a href="#cursos" class="cta">Quiero Empezar</a>
+
               </div>
             </div>
           </section>
@@ -255,112 +280,97 @@
             </section>
         </section>
 
-        <section class="price container" id="price">
-            <h2 class="subtitle">Obten el plan perfecto para aprender</h2>
-
-            <div class="price__table">
-                <div class="price__element">
-                    <p class="price__name">Lógica</p>
-                    <h3 class="price__price">Free</h3>
-
-                    <div class="price__items">
-                        <p class="price__features">Principios Basicos</p>
-                        <p class="price__features">Tipos de Datos</p>
-                        <p class="price__features">Variables</p>
-                    </div>
-
-                    <a href="#" class="price__cta">Empieza ahora</a>
-                </div>
-
-
-                <div class="price__element price__element--best">
-                    <p class="price__name">JavaScript Avanzado</p>
-                    <h3 class="price__price">$30/mes</h3>
-
-                    <div class="price__items">
-                        <p class="price__features">Funciones de orden superior</p>
-                        <p class="price__features">Manipulacion del Dom</p>
-                        <p class="price__features">Herencia Prototipos</p>
-                    </div>
-
-                    <a href="#" class="price__cta">Empieza ahora</a>
-                </div>
-
-
-                <div class="price__element">
-                    <p class="price__name">Aplicaicones Web</p>
-                    <h3 class="price__price">$40/mes</h3>
-
-                    <div class="price__items">
-                        <p class="price__features">Aprenderas a crear tu primera app web</p>
-                        <p class="price__features">ReactJS</p>
-                        <p class="price__features">Angular o Vue.js</p>
-                    </div>
-
-                    <a href="#" class="price__cta">Empieza ahora</a>
-                </div>
-
-
-            </div>
-        </section>
-
+        
         <section class="testimony">
             <div class="testimony__container container">
                 <img src="./images/leftarrow.svg" class="testimony__arrow" id="before">
 
                 <section class="testimony__body testimony__body--show" data-id="1">
                     <div class="testimony__texts">
-                        <h2 class="subtitle">Mi nombre es Damaris , <span class="testimony__course">estudiante
-                                de JavaScript.</span></h2>
-                        <p class="testimony__review">Como estudiante de JavaScript, estoy encantada de compartir mi experiencia. A medida que me sumerjo en el mundo de la programación, encuentro en JavaScript una herramienta fascinante y versátil. Desde el manejo del DOM hasta la creación de aplicaciones web interactivas, cada descubrimiento me acerca más a mis metas profesionales. Estoy agradecida por la oportunidad de aprender y crecer en este campo emocionante.</p>
-                    </div>
-
-                    <figure class="testimony__picture">
-                        <img src="./images/face.jpg" class="testimony__img">
-                    </figure>
+                        <h2 class="subtitle">Hola, soy Edgar, <span class="testimony__course">creador de contenido y desarrollador web.</span></h2>
+                        <p class="testimony__review">Me dedico a enseñar programación desde cero usando HTML, CSS y JavaScript. Ayudo a quienes quieren comenzar en este mundo y transformar sus conocimientos en oportunidades reales. ¡Bienvenido a mi plataforma!</p>
+                      </div>
+                    
+                      <figure class="testimony__picture">
+                        <img src="./images/foto.png" class="testimony__img">
+                      </figure>
                 </section>
 
                 <section class="testimony__body" data-id="2">
                     <div class="testimony__texts">
-                        <h2 class="subtitle">Mi nombre es Johana Sanchez, <span class="testimony__course">estudiante de
-                                CSS.</span></h2>
-                        <p class="testimony__review"> Como estudiante de JavaScript, estoy encantada de compartir mi experiencia. A medida que me sumerjo en el mundo de la programación, encuentro en JavaScript una herramienta fascinante y versátil. Desde el manejo del DOM hasta la creación de aplicaciones web interactivas, cada descubrimiento me acerca más a mis metas profesionales. Estoy agradecida por la oportunidad de aprender y crecer en este campo emocionante.</p>
-                    </div>
-
-                    <figure class="testimony__picture">
-                        <img src="./images/face2.jpg" class="testimony__img">
-                    </figure>
+                        <h2 class="subtitle">¿Ya me sigues en Facebook? <span class="testimony__course">Encuéntrame como programacionweb</span></h2>
+                        <p class="testimony__review">En Facebook comparto tips, videos cortos y consejos para aprender programación de forma sencilla y práctica. Únete a una comunidad de miles de personas que ya están aprendiendo y creciendo.</p>
+                      </div>
+                    
+                      <figure class="testimony__picture">
+                        <img src="./images/foto.png" class="testimony__img">
+                      </figure>
                 </section>
 
                 <section class="testimony__body" data-id="3">
                     <div class="testimony__texts">
-                        <h2 class="subtitle">Mi nombre es Julio Gonzales, <span class="testimony__course">estudiante de
-                                CSS.</span></h2>
-                        <p class="testimony__review">Como estudiante de JavaScript, estoy encantado de compartir mi experiencia. A medida que me sumerjo en el mundo de la programación, encuentro en JavaScript una herramienta fascinante y versátil. Desde el manejo del DOM hasta la creación de aplicaciones web interactivas, cada descubrimiento me acerca más a mis metas profesionales. Estoy agradecida por la oportunidad de aprender y crecer en este campo emocionante.</p>
-                    </div>
-
-                    <figure class="testimony__picture">
-                        <img src="./images/face3.jpg" class="testimony__img">
-                    </figure>
+                        <h2 class="subtitle">También estoy en YouTube, como edukuk <span class="testimony__course">con contenido exclusivo para ti.</span></h2>
+                        <p class="testimony__review">Subo videos donde explico paso a paso cómo crear proyectos reales con JavaScript, React y mucho más. Suscríbete y aprende a tu ritmo. ¡No te lo pierdas!</p>
+                      </div>
+                    
+                      <figure class="testimony__picture">
+                        <img src="./images/foto.png" class="testimony__img">
+                      </figure>
                 </section>
-
-                <section class="testimony__body" data-id="4">
-                    <div class="testimony__texts">
-                        <h2 class="subtitle">Mi nombre es José Morales, <span class="testimony__course">estudiante de
-                                CSS.</span></h2>
-                        <p class="testimony__review">Como estudiante de JavaScript, estoy encantado de compartir mi experiencia. A medida que me sumerjo en el mundo de la programación, encuentro en JavaScript una herramienta fascinante y versátil. Desde el manejo del DOM hasta la creación de aplicaciones web interactivas, cada descubrimiento me acerca más a mis metas profesionales. Estoy agradecida por la oportunidad de aprender y crecer en este campo emocionante.</p>
-                    </div>
-
-                    <figure class="testimony__picture">
-                        <img src="./images/face4.jpg" class="testimony__img">
-                    </figure>
-                </section>
-
-
                 <img src="./images/rightarrow.svg" class="testimony__arrow" id="next">
             </div>
         </section>
 
+
+        <section class="price container" id="price">
+            <h2 class="subtitle">Elige tu plan y conviértete en creador de contenido</h2>
+          
+            <div class="price__table">
+          
+              <div class="price__element">
+                <p class="price__name">Fundamentos Creativos</p>
+                <h3 class="price__price">Gratis</h3>
+          
+                <div class="price__items">
+                  <p class="price__features">Videos para practicar html, CSS JavaScript y Reactjs</p>
+                  <p class="price__features">Códigos descargables</p>
+                  <p class="price__features">Acceso Fácil</p>
+                </div>
+          
+                <a href="https://edukukgt.vercel.app/" target="_blank" class="price__cta">Empieza gratis</a>
+              </div>
+          
+              <div class="price__element price__element--best">
+                <p class="price__name">Curso Pro: Grabación y Edición</p>
+                <h3 class="price__price">$30</h3>
+          
+                <div class="price__items">
+                  <p class="price__features">Producción de contenido profesional</p>
+                  <p class="price__features">Crea tu propia página web</p>
+                  <p class="price__features">Publica en Gumroad y Hotmart</p>
+                  <p class="price__features">Monetiza con PayPal y redes sociales</p>
+                </div>
+          
+                <a href="#" class="price__cta">Comenzar ahora</a>
+              </div>
+          
+              <div class="price__element">
+                <p class="price__name">Creador Digital Avanzado</p>
+                <h3 class="price__price">$40</h3>
+          
+                <div class="price__items">
+                  <p class="price__features">Crea tu propia página web</p>
+                  <p class="price__features">Publica en Gumroad y Hotmart</p>
+                  <p class="price__features">Monetiza con PayPal y redes sociales</p>
+                  <p class="price__features">Acceso a todas las plantillas</p>
+                </div>
+          
+                <a href="#" class="price__cta">Comprar</a>
+              </div>
+          
+            </div>
+          </section>
+          
 
         
         
@@ -399,7 +409,6 @@
         <section class="footer__copy container">
             <div class="footer__social">
                 <a href="https://www.facebook.com/profile.php?id=100094217906458"  target="_blank" class="footer__icons"><img src="./images/facebook.svg" class="footer__img"></a>
-                <a href="https://twitter.com/RomeroChocooj1"  target="_blank"class="footer__icons"><img src="./images/twitter.svg" class="footer__img"></a>
  <a href="https://www.youtube.com/channel/UCQLV4bIw__DiplHJ7gNmt0A" target="_blank" class="footer__icons"><img src="./images/youtube.svg" class="footer__img"></a>
             </div>
 
